@@ -1,0 +1,96 @@
+:root {
+    /* COLORS */
+    /* Primary */
+    --blue: hsl(246, 80%, 60%);
+    --light-yellow: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-red: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+    /* Neutral */
+   --very-dark-blue: hsl(226, 43%, 10%);
+   --dark-blue: hsl(235, 46%, 20%);
+   --desaturated-blue: hsl(235, 45%, 61%);
+   --pale-blue: hsl(236, 100%, 87%);
+
+    /*FONTS*/
+    --font-primary: 'Rubik', sans-serif;
+
+    /* WIDTHS */
+    --width: 55rem;
+}
+
+/* GLOBAL */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--very-dark-blue);
+    font-size: 1.8rem;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: min(90%, var(--width));
+    margin: 0 auto;
+}
+.d-none { 
+    display: none;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+
+/* FOOTER */
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .attribution {
+        font-size: 1.2rem;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.attribution__text {
+    color: var(--light-cyan);
+}
+
+.attribution__link {
+    color: var(--neon-green);
+}
