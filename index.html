@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Time tracking dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,68 +13,111 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
   <main class="container">
-    Report for
-    Jeremy Robson
-  
-    Daily
-    Weekly
-    Monthly
-  
-    Work
-    5hrs <!-- daily -->
-    Previous - 7hrs <!-- daily -->
-    32hrs <!-- weekly -->
-    Previous - 36hrs <!-- weekly -->
-    103hrs <!-- monthly -->
-    Previous - 128hrs <!-- monthly -->
-  
-    Play
-    1hr <!-- daily -->
-    Previous - 2hrs <!-- daily -->
-    10hrs <!-- weekly -->
-    Previous - 8hrs <!-- weekly -->
-    23hrs <!-- monthly -->
-    Previous - 29hrs <!-- monthly -->
-  
-    Study
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 7hrs <!-- weekly -->
-    13hrs <!-- monthly -->
-    Previous - 19hrs <!-- monthly -->
-  
-    Exercise
-    1hr <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 5hrs <!-- weekly -->
-    11hrs <!-- monthly -->
-    Previous - 18hrs <!-- monthly -->
-  
-    Social
-    1hr <!-- daily -->
-    Previous - 3hrs <!-- daily -->
-    5hrs <!-- weekly -->
-    Previous - 10hrs <!-- weekly -->
-    21hrs <!-- monthly -->
-    Previous - 23hrs <!-- monthly -->
-  
-    Self Care
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    2hrs <!-- weekly -->
-    Previous - 2hrs <!-- weekly -->
-    7hrs <!-- monthly -->
-    Previous - 11hrs <!-- monthly -->
+    <header class="header">
+      <div class="header__user-info">
+        <img class="header__user-image" src="./images/image-jeremy.png" alt="Image user jeremy">
+        <p class="header__user-report">Report for <span class="header__user-name">Jeremy Robson</span></p>
+      </div>
+
+      <nav class="header__navegation">
+        <a href="#/daily">Daily</a>
+        <a href="#/weekly">Weekly</a>
+        <a href="#/monthly">Monthly</a>
+      </nav>
+    </header>
+
+    <div class="tracking">
+      <div class="tracking__category">
+        <div class="tracking__image">
+          <img src="./images/icon-work.svg" alt="Icon work">
+        </div>
+        <div class="tracking__content">
+          <p class="tracking__name">Work</p>
+          <div class="tracking__time">
+            <p class="tracking__hours">32hrs</p>
+            <p class="tracking__previous">Last Weeb - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tracking__category">
+        <div class="tracking__image">
+          <img src="./images/icon-play.svg" alt="Icon play">
+        </div>
+        <div class="tracking__content">
+          <p class="tracking__name">Play</p>
+          <div class="tracking__time">
+            <p class="tracking__hours">10hrs</p>
+            <p class="tracking__previous">Last Weeb - 8hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tracking__category">
+        <div class="tracking__image">
+          <img src="./images/icon-study.svg" alt="Icon study">
+        </div>
+        <div class="tracking__content">
+          <p class="tracking__name">Study</p>
+          <div class="tracking__time">
+            <p class="tracking__hours">4hrs</p>
+            <p class="tracking__previous">Last Weeb - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tracking__category">
+        <div class="tracking__image">
+          <img src="./images/icon-exercise.svg" alt="Icon exercise">
+        </div>
+        <div class="tracking__content">
+          <p class="tracking__name">Exercise</p>
+          <div class="tracking__time">
+            <p class="tracking__hours">4hrs</p>
+            <p class="tracking__previous">Last Weeb - 5hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tracking__category">
+        <div class="tracking__image">
+          <img src="./images/icon-social.svg" alt="Icon social">
+        </div>
+        <div class="tracking__content">
+          <p class="tracking__name">Social</p>
+          <div class="tracking__time">
+            <p class="tracking__hours">5hrs</p>
+            <p class="tracking__previous">Last Weeb - 10hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tracking__category">
+        <div class="tracking__image">
+          <img src="./images/icon-self-care.svg" alt="Icon self care">
+        </div>
+        <div class="tracking__content">
+          <p class="tracking__name">Self Care</p>
+          <div class="tracking__time">
+            <p class="tracking__hours">2hrs</p>
+            <p class="tracking__previous">Last Weeb - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
-  
-   <footer class="attribution">
-    <p class="attribution__text">Challenge by <a class="attribution__link" href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db" target="_blank">Frontend Mentor</a>.</p>
-    <p class="attribution__text">Coded by <a class="attribution__link" href="https://github.com/victorivanlopezlearning" target="_blank">Víctor Iván López</a>.</p>
+
+  <footer class="attribution">
+    <p class="attribution__text">Challenge by <a class="attribution__link"
+        href="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db" target="_blank">Frontend
+        Mentor</a>.</p>
+    <p class="attribution__text">Coded by <a class="attribution__link" href="https://github.com/victorivanlopezlearning"
+        target="_blank">Víctor Iván López</a>.</p>
   </footer>
 </body>
+
 </html>

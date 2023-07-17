@@ -1,18 +1,19 @@
 :root {
     /* COLORS */
     /* Primary */
-    --blue: hsl(246, 80%, 60%);
-    --light-yellow: hsl(15, 100%, 70%);
-    --soft-blue: hsl(195, 74%, 62%);
-    --light-red: hsl(348, 100%, 68%);
-    --lime-green: hsl(145, 58%, 55%);
-    --violet: hsl(264, 64%, 52%);
-    --soft-orange: hsl(43, 84%, 65%);
+    --blue:             hsl(246, 80%, 60%);
+    --light-yellow:     hsl(15, 100%, 70%);
+    --soft-blue:        hsl(195, 74%, 62%);
+    --light-red:        hsl(348, 100%, 68%);
+    --lime-green:       hsl(145, 58%, 55%);
+    --violet:           hsl(264, 64%, 52%);
+    --soft-orange:      hsl(43, 84%, 65%);
     /* Neutral */
-   --very-dark-blue: hsl(226, 43%, 10%);
-   --dark-blue: hsl(235, 46%, 20%);
-   --desaturated-blue: hsl(235, 45%, 61%);
-   --pale-blue: hsl(236, 100%, 87%);
+   --very-dark-blue:    hsl(226, 43%, 10%);
+   --dark-blue:         hsl(235, 46%, 20%);
+   --desaturated-blue:  hsl(235, 45%, 61%);
+   --pale-blue:         hsl(236, 100%, 87%);
+   --white:             hsl(0, 0%, 100%);
 
     /*FONTS*/
     --font-primary: 'Rubik', sans-serif;
@@ -36,6 +37,7 @@ html {
 body {
     font-family: var(--font-primary);
     background-color: var(--very-dark-blue);
+    color: var(--white);
     font-size: 1.8rem;
     line-height: 1.5;
     min-height: 100vh;
@@ -88,9 +90,9 @@ h1 {
 }
 
 .attribution__text {
-    color: var(--light-cyan);
+    color: var(--white);
 }
 
 .attribution__link {
-    color: var(--neon-green);
+    color: var(--desaturated-blue);
 }
