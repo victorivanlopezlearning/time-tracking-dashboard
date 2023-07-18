@@ -2,12 +2,12 @@
     /* COLORS */
     /* Primary */
     --blue:             hsl(246, 80%, 60%);
-    --light-yellow:     hsl(15, 100%, 70%);
+    --light-orange:     hsl(15, 100%, 70%);
     --soft-blue:        hsl(195, 74%, 62%);
     --light-red:        hsl(348, 100%, 68%);
     --lime-green:       hsl(145, 58%, 55%);
     --violet:           hsl(264, 64%, 52%);
-    --soft-orange:      hsl(43, 84%, 65%);
+    --soft-yellow:      hsl(43, 84%, 65%);
     /* Neutral */
    --very-dark-blue:    hsl(226, 43%, 10%);
    --dark-blue:         hsl(235, 46%, 20%);
@@ -60,7 +60,7 @@ a {
 
 .container {
     width: min(90%, var(--width));
-    margin: 0 auto;
+    margin: 6rem auto;
 }
 .d-none { 
     display: none;
@@ -70,7 +70,124 @@ h1 {
     font-size: 2.8rem;
 }
 
+/* HEADER */
+.header {
+    margin-bottom: 2rem ;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+}
+.header__user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    background-color: var(--blue);
+    border-radius: 15px;
+}
+.tracking__ellipsis {
+    cursor: pointer;
+}
+.header__user-image {
+    width: 7rem;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+}
+.header__user-report {
+    color: var(--pale-blue);
+    font-size: 1.3rem;
+}
+.header__user-name {
+    display: block;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+.header__navegation {
+    padding: 2rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__navegation-link {
+    color: var(--desaturated-blue);
+    font-size: 1.6rem;
+}
+@media (hover: hover) {
+    .header__navegation-link {
+        transition: color .3s;
+    }
+    .header__navegation-link:hover {
+        color: var(--white);
+    }
+}
+.header__navegation-link--selected {
+    color: var(--white);
+}
 
+/* TRACKING */
+.tracking {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.tracking__category {
+    border-radius: 15px;
+}
+.tracking__category.work {
+    background-color: var(--light-orange);
+}
+.tracking__category.play {
+    background-color: var(--soft-blue);
+}
+.tracking__category.study {
+    background-color: var(--light-red);
+}
+.tracking__category.exercise {
+    background-color: var(--lime-green);
+}
+.tracking__category.social {
+    background-color: var(--violet);
+}
+.tracking__category.self-care {
+    background-color: var(--soft-yellow);
+}
+.tracking__content-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+.tracking__image {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin-top: -0.6rem;
+}
+.tracking__content {
+    margin-top: -2.5rem;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    padding: 2rem;
+    position: relative;
+}
+.tracking__info,
+.tracking__time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tracking__hours {
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+.tracking__previous {
+    font-size: 1.4rem;
+    color: var(--desaturated-blue);
+}
 /* FOOTER */
 .attribution {
     font-size: 1rem;

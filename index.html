@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Time tracking dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -23,16 +23,16 @@
       </div>
 
       <nav class="header__navegation">
-        <a href="#/daily">Daily</a>
-        <a href="#/weekly">Weekly</a>
-        <a href="#/monthly">Monthly</a>
+        <a class="header__navegation-link" href="#/daily">Daily</a>
+        <a class="header__navegation-link header__navegation-link--selected" href="#/weekly">Weekly</a>
+        <a class="header__navegation-link" href="#/monthly">Monthly</a>
       </nav>
     </header>
 
     <div class="tracking">
-      <div class="tracking__category">
-        <div class="tracking__image">
-          <img src="./images/icon-work.svg" alt="Icon work">
+      <div class="tracking__category work">
+        <div class="tracking__content-image">
+          <img class="tracking__image" src="./images/icon-work.svg" alt="Icon work">
         </div>
         <div class="tracking__content">
           <div class="tracking__info">
@@ -46,9 +46,9 @@
         </div>
       </div>
 
-      <div class="tracking__category">
-        <div class="tracking__image">
-          <img src="./images/icon-play.svg" alt="Icon play">
+      <div class="tracking__category play">
+        <div class="tracking__content-image">
+          <img class="tracking__image" src="./images/icon-play.svg" alt="Icon play">
         </div>
         <div class="tracking__content">
           <div class="tracking__info">
@@ -62,9 +62,9 @@
         </div>
       </div>
 
-      <div class="tracking__category">
-        <div class="tracking__image">
-          <img src="./images/icon-study.svg" alt="Icon study">
+      <div class="tracking__category study">
+        <div class="tracking__content-image">
+          <img class="tracking__image" src="./images/icon-study.svg" alt="Icon study">
         </div>
         <div class="tracking__content">
           <div class="tracking__info">
@@ -78,9 +78,9 @@
         </div>
       </div>
 
-      <div class="tracking__category">
-        <div class="tracking__image">
-          <img src="./images/icon-exercise.svg" alt="Icon exercise">
+      <div class="tracking__category exercise">
+        <div class="tracking__content-image">
+          <img class="tracking__image" src="./images/icon-exercise.svg" alt="Icon exercise">
         </div>
         <div class="tracking__content">
           <div class="tracking__info">
@@ -94,9 +94,9 @@
         </div>
       </div>
 
-      <div class="tracking__category">
-        <div class="tracking__image">
-          <img src="./images/icon-social.svg" alt="Icon social">
+      <div class="tracking__category social">
+        <div class="tracking__content-image">
+          <img class="tracking__image" src="./images/icon-social.svg" alt="Icon social">
         </div>
         <div class="tracking__content">
           <div class="tracking__info">
@@ -110,9 +110,9 @@
         </div>
       </div>
 
-      <div class="tracking__category">
-        <div class="tracking__image">
-          <img src="./images/icon-self-care.svg" alt="Icon self care">
+      <div class="tracking__category self-care">
+        <div class="tracking__content-image">
+          <img class="tracking__image" src="./images/icon-self-care.svg" alt="Icon self care">
         </div>
         <div class="tracking__content">
           <div class="tracking__info">
