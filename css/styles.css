@@ -244,6 +244,14 @@ h1 {
         margin-top: -1rem;
     }
 }
+@media (hover: hover) {
+    .tracking__content {
+        transition: background-color .3s;
+    }
+    .tracking__content:hover {
+        background-color: #34397B;
+    }
+}
 @media (min-width: 768px) {
     .tracking__name {
         font-size: 1.4rem;
@@ -255,6 +263,11 @@ h1 {
 @media (min-width: 768px) {
     .tracking__ellipsis {
         width: 1.5rem;
+    }
+}
+@media (hover: hover) {
+    .tracking__ellipsis:hover {
+        filter: brightness(0) invert(1);
     }
 }
 .tracking__info,
