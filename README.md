@@ -33,8 +33,8 @@ Your users should be able to:
 
 ### Links
 
-<!-- - Solution URL: [frontendmentor.io/victorivanlopezlearning](https://www.frontendmentor.io/solutions/advice-generator-app-vanilla-css-javascript-api-QVboo_kp0v)
-- Live Site URL: [victorivanlopez/advice-generator-app/](https://victorivanlopezlearning.github.io/advice-generator-app/) -->
+- Solution URL: [frontendmentor.io/victorivanlopezlearning](https://www.frontendmentor.io/solutions/time-tracking-dashboard-vanilla-css-javascript-3GTy1_o-i3)
+- Live Site URL: [victorivanlopezlearning.github.io/time-tracking-dashboard/](https://victorivanlopezlearning.github.io/time-tracking-dashboard/)
 
 ## My process
 
