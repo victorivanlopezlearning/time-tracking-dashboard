@@ -79,6 +79,7 @@ h1 {
 .tracking {
     display: grid;
     grid-template-columns: 1fr;
+    align-items: initial;
     gap: 2rem;
 }
 @media (min-width: 768px) {
@@ -109,7 +110,7 @@ h1 {
         flex-direction: column;
         align-items: start;
         gap: 2rem;
-        padding: 0 2rem 3rem 2rem;
+        padding: 1rem 2rem 3rem 2rem;
     }
 }
 .header__user-image {
@@ -157,7 +158,7 @@ h1 {
         justify-content: center;
         align-items: start;
         gap: 0.7rem;
-        padding: 0 2rem;
+        padding: 1rem 2rem;
     }
 }
 .header__navegation-link {
@@ -181,13 +182,14 @@ h1 {
     color: var(--white);
 }
 
-.tracking__card {
+.tracking__cards {
     display: grid;
     grid-template-columns: 1fr;
+    align-items: start;
     gap: 2rem;
 }
 @media (min-width: 768px) {
-    .tracking__card {
+    .tracking__cards {
         grid-template-columns: repeat(3, 1fr);
     }
 }

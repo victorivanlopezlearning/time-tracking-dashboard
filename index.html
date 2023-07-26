@@ -23,109 +23,13 @@
       </div>
 
       <nav class="header__navegation">
-        <a class="header__navegation-link" href="#/daily">Daily</a>
-        <a class="header__navegation-link header__navegation-link--selected" href="#/weekly">Weekly</a>
-        <a class="header__navegation-link" href="#/monthly">Monthly</a>
+        <a data-view="daily" class="header__navegation-link" href="#/daily">Daily</a>
+        <a data-view="weekly" class="header__navegation-link header__navegation-link--selected" href="#/weekly">Weekly</a>
+        <a data-view="monthly" class="header__navegation-link" href="#/monthly">Monthly</a>
       </nav>
     </header>
 
-    <div class="tracking__card">
-      <div class="tracking__category work">
-        <div class="tracking__content-image">
-          <img class="tracking__image" src="./images/icon-work.svg" alt="Icon work">
-        </div>
-        <div class="tracking__content">
-          <div class="tracking__info">
-            <p class="tracking__name">Work</p>
-            <img class="tracking__ellipsis" src="./images/icon-ellipsis.svg" alt="Icon ellipsis">
-          </div>
-          <div class="tracking__time">
-            <p class="tracking__hours">32hrs</p>
-            <p class="tracking__previous">Last Week - 36hrs</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="tracking__category play">
-        <div class="tracking__content-image">
-          <img class="tracking__image" src="./images/icon-play.svg" alt="Icon play">
-        </div>
-        <div class="tracking__content">
-          <div class="tracking__info">
-            <p class="tracking__name">Play</p>
-            <img class="tracking__ellipsis" src="./images/icon-ellipsis.svg" alt="Icon ellipsis">
-          </div>
-          <div class="tracking__time">
-            <p class="tracking__hours">10hrs</p>
-            <p class="tracking__previous">Last Week - 8hrs</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="tracking__category study">
-        <div class="tracking__content-image">
-          <img class="tracking__image" src="./images/icon-study.svg" alt="Icon study">
-        </div>
-        <div class="tracking__content">
-          <div class="tracking__info">
-            <p class="tracking__name">Study</p>
-            <img class="tracking__ellipsis" src="./images/icon-ellipsis.svg" alt="Icon ellipsis">
-          </div>
-          <div class="tracking__time">
-            <p class="tracking__hours">4hrs</p>
-            <p class="tracking__previous">Last Week - 7hrs</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="tracking__category exercise">
-        <div class="tracking__content-image">
-          <img class="tracking__image" src="./images/icon-exercise.svg" alt="Icon exercise">
-        </div>
-        <div class="tracking__content">
-          <div class="tracking__info">
-            <p class="tracking__name">Exercise</p>
-            <img class="tracking__ellipsis" src="./images/icon-ellipsis.svg" alt="Icon ellipsis">
-          </div>
-          <div class="tracking__time">
-            <p class="tracking__hours">4hrs</p>
-            <p class="tracking__previous">Last Week - 5hrs</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="tracking__category social">
-        <div class="tracking__content-image">
-          <img class="tracking__image" src="./images/icon-social.svg" alt="Icon social">
-        </div>
-        <div class="tracking__content">
-          <div class="tracking__info">
-            <p class="tracking__name">Social</p>
-            <img class="tracking__ellipsis" src="./images/icon-ellipsis.svg" alt="Icon ellipsis">
-          </div>
-          <div class="tracking__time">
-            <p class="tracking__hours">5hrs</p>
-            <p class="tracking__previous">Last Week - 10hrs</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="tracking__category self-care">
-        <div class="tracking__content-image">
-          <img class="tracking__image" src="./images/icon-self-care.svg" alt="Icon self care">
-        </div>
-        <div class="tracking__content">
-          <div class="tracking__info">
-            <p class="tracking__name">Self Care</p>
-            <img class="tracking__ellipsis" src="./images/icon-ellipsis.svg" alt="Icon ellipsis">
-          </div>
-          <div class="tracking__time">
-            <p class="tracking__hours">2hrs</p>
-            <p class="tracking__previous">Last Week - 2hrs</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="trackingCards" class="tracking__cards"></div>
   </main>
 
 
@@ -136,6 +40,7 @@
     <p class="attribution__text">Coded by <a class="attribution__link" href="https://github.com/victorivanlopezlearning"
         target="_blank">Víctor Iván López</a>.</p>
   </footer>
-</body>
 
+  <script src="./js/index.js"></script>
+</body>
 </html>
