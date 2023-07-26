@@ -11,7 +11,7 @@ const initApp = async () => {
 }
 
 const getStats = async () => {
-  const response = await fetch('../data.json');
+  const response = await fetch('/../data.json');
   return await response.json();
 }
 
